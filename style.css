@@ -5,20 +5,21 @@
     }
     
     .container {
-        width: 100%;
-        min-height: 100vh;
-        background: linear-gradient(135deg, #c2e0ff, #ffb3d6);
-        padding: 10px;
-    }
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #c0c0c0);
+    padding: 10px;
+}
     
     .toDo {
-        width: 100%;
-        max-width: 500px;
-        background-color: rgba(255, 255, 255, 0.75);
-        margin: 100px auto 20px;
-        padding: 40px 30px 70px;
-        border-radius: 10px;
-    }
+    width: 100%;
+    max-width: 500px;
+    background-color: #e5e7eb;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.25);
+}
     
     .toDo h1 {
         margin-bottom: 30px;
@@ -34,14 +35,14 @@
     }
     
     .row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #eaeaea;
-        border-radius: 30px;
-        padding-left: 10px;
-        margin-bottom: 25px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f5f9;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
     
     input {
         flex: 1;
@@ -53,21 +54,21 @@
     }
     
     #tombol {
-        border: none;
-        outline: none;
-        padding: 10px 20px;
-        background: #7f49d7;
-        color: #ffffff;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 40px;
-    }
-    
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #1e3a5f;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
     #tombol:hover {
-        background: #d4c2f5;
-        color: #232323;
-    }
-    
+    background: #c0c0c0;
+    color: #1e3a5f;
+}
+
     #listContainer li {
         list-style: none;
         padding: 12px 8px 10px 50px;
@@ -108,8 +109,38 @@
         text-align: center;
         border-radius: 50%;
     }
-    
-    #listContainer li span:hover {
-        background: #ccc;
-        color: #fff;
-    }
+
+#listContainer li span:hover {
+    background: #ccc;
+    color: #fff;
+}
+
+#listContainer li:hover {
+    background-color: #dbe2ea;
+    border-radius: 8px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #b0b7c3;
+}
+
+.stats p {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    color: #1e3a5f;
+}
+
+.stats span {
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f172a;
+}
+
